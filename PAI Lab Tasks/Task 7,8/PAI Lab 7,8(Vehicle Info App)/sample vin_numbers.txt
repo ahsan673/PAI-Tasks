@@ -1,0 +1,11 @@
+ Sample VIN Numbers for Testing
+
+VIN Number	        Description
+
+1HGCM82633A004352	2003 Honda Accord (commonly used test VIN)
+1FAFP404X1F192345	2001 Ford Mustang
+WDBUF56X68B273908	2008 Mercedes-Benz E-Class
+JH4KA9650MC012345	1991 Acura Legend
+1G1YZ23J9P5800001	1993 Chevrolet Corvette
+2HGFG3B51FH502567	2015 Honda Civic
+3VW2K7AJ5DM210988	2013 Volkswagen Jetta

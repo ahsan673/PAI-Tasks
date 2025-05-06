@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Info App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Information Lookup</h1>
+        <form method="POST" onsubmit="return validateForm()">
+            <input type="text" id="vin" name="vin" placeholder="Enter VIN (17 characters)" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p class="error">{{ error }}</p>
+
+        {% if vehicle %}
+        <div class="info">
+            <h3>Vehicle Details:</h3>
+            <p><strong>Make:</strong> {{ vehicle['Make'] }}</p>
+            <p><strong>Model:</strong> {{ vehicle['Model'] }}</p>
+            <p><strong>Year:</strong> {{ vehicle['Year'] }}</p>
+            <p><strong>Fuel Type:</strong> {{ vehicle['Fuel Type'] }}</p>
+            <p><strong>Engine:</strong> {{ vehicle['Engine'] }}</p>
+            <p><strong>Class:</strong> {{ vehicle['Class'] }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

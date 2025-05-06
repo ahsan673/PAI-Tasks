@@ -1,0 +1,6 @@
+torch torchvision torchaudio
+opencv-python
+folium
+numpy
+matplotlib
+cd yolov5
