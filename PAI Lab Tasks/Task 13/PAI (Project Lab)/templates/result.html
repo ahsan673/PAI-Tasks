@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results - Grammar Corrector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <p><strong>Original Text:</strong> {{ original }}</p>
+        <p><strong>Corrected Text:</strong> {{ corrected }}</p>
+        <p><strong>Completed Sentence:</strong> {{ completed }}</p>
+        <p><strong>Number of Corrections:</strong> {{ num_corrections }}</p>
+
+        <h4>Changes Made:</h4>
+        <ul>
+            {% for change in changes %}
+                <li>{{ change }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
